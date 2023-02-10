@@ -1,0 +1,85 @@
+/* General */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.menu {
+    height: 100vh;
+    width: 80vw;
+    background: hotpink;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+  
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+nav {
+    text-align: center;
+    margin: 10px;
+}
+
+
+/* index.html */
+.section_img {
+    background-image: url(/img/front.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.section_img h1 {
+    color: black;
+}
+
+
+/* ##### Device config ###### */
+
+/* Mobile */
+@media (max-width: 600px) {
+    .menu {
+        visibility: visible;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 600px) {
+    .menu {
+        visibility: hidden;
+    }
+
+    nav {
+        visibility: visible;
+    }
+
+}
+
+
+
+
+
+
+
+/* Mobile */
