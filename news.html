@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <title>News</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo_img">
+        </a>
+        <h1>NTI Bike Bois</h1>
+
+        <button class="menu-btn-toggle">
+            <i class="material-icons">menu</i>
+        </button>
+    </header>
+
+    <nav>
+        <a href="about.html">Föreningen</a>
+        <a href="member.html">Bli medlem</a>
+        <a href="news.html">Nyheter</a>
+        <a href="gallery.html">Galleri</a>
+
+    </nav>
+    <div class="fade-layer"></div>
+
+<main>
+    <h1>Nyheter:</h1>
+    <article class="news-article">
+        <img src="img/karnkraft_halmstad_resan.jpg" alt="news img">
+        <p>2023-03-10</p>
+        <h1>Vi har köpt ett kärnkraftverk</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sunt molestiae enim distinctio provident
+            modi omnis nobis vitae. Aperiam, amet aliquid. Nulla voluptatum, quas perspiciatis obcaecati recusandae
+            nobis ullam quibusdam.</p>
+    </article>
+
+    <h1>Sponsorer:</h1>
+
+    <div class="news-sponsors">
+        <img class="icon-img" src="img/nti_logga.png" alt="nti_logga">
+
+        <link class="restaurant_guru" href="https://awards.infcdn.net/transparent_v2.css" rel="stylesheet" />
+        <div id="rest_white" data="29" class="rest_black"
+            onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.rest-white_center').href);return 0;}">
+            <div class="rest-white_year">2023</div> <a href="https://restaurantguru.com/Ericks-Pankakor-Gothenburg"
+                class="rest-white_center fz15" target="_blank">Ericks Pankakor</a>
+            <div class="rest_white_arc-heading"> <svg xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="140px" viewBox="0 0 140 140">
+                    <defs>
+                        <path id="rest_white_subheading-arc" d="M 12 70 a 58 58 0 0 0 116 0"></path>
+                    </defs> <text class="heading__subheading " fill="#fff" text-anchor="middle">
+                        <textPath startOffset="50%" xlink:href="#rest_white_subheading-arc">Restaurant Guru •
+                            Recommended</textPath>
+                    </text>
+                </svg> </div>
+        </div>
+
+    </div>
+</main>
+
+</body>
+
+</html>

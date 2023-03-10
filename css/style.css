@@ -34,6 +34,24 @@ h1 {
     text-align: center;
 }
 
+footer {
+  display: flex;
+  height: 20vh;
+  background-color: purple;
+}
+
+footer p, a {
+  color: aliceblue;
+  margin: 10px;
+  padding-top: 10px;
+
+}
+
+.icon-img {
+  height: 10vh;
+  width: auto;
+ }
+
 
 /* -- Dropdown menu --*/
 .show {
@@ -42,8 +60,6 @@ h1 {
 
 }
 
-
-  
 .fade-layer.visible{
     display: block;
 }
@@ -241,8 +257,37 @@ h1 {
     position: relative;
     border-radius: 6px;
   }
- 
-  
+
+
+/* -------------------- */
+/* news.html */
+.news-article {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  background-color: lightgray;
+ }
+
+.news-article p {
+  margin: 10px;
+}
+
+ .news-article img {
+  height: 30vh;
+  width: fit-content;
+  margin-top: 10px;
+
+ }
+
+ .news-sponsors {
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+
+  /* -------------------- */
+
 /* -------------------- */
 
 
@@ -267,7 +312,7 @@ h1 {
         background-color: white;
         height: 40vh;
         align-items: center;
-        width: 100%;
+        width: 100vw;
         position: fixed;
         top: 0;
         visibility: hidden;
