@@ -55,30 +55,26 @@ a {
   color: black;
 }
 
-
-main {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-
 h1 {
     text-align: center;
-
-  }
-
-h2 {
-}
-
-p {
-
 }
 
 footer {
   display: flex;
-  height: 20vh;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: purple;
 }
+
+.footer-desktop-div {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
 
 footer p, a {
   color: aliceblue;
@@ -92,7 +88,11 @@ footer p, a {
   width: auto;
  }
 
-
+ 
+.logo-img {
+  height: 20vh;
+  width: auto;
+ }
 
 /* -- Dropdown menu --*/
 .show {
@@ -102,7 +102,7 @@ footer p, a {
 }
 
 .fade-layer.visible{
-    display: block;
+    display: flex;
 }
 
 .fade-layer{
@@ -191,17 +191,14 @@ footer p, a {
     opacity: 1;
   }
   
-
-
-
 /* -------------------- */
-
 /* about.html */
 .about-image {
     background-image: url(/img/hono_resan.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
+    width: 100%;
     display: flex;
     align-items: top;
     justify-content: center;
@@ -329,6 +326,17 @@ footer p, a {
 
   /* -------------------- */
 /* Member.html */
+.member-image {
+  background-image: url(/img/cykelbois_gungar.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
 .member-article a {
   display: flex;
   justify-content: center;
@@ -337,7 +345,6 @@ footer p, a {
 
   /* -------------------- */
 /* gear.html */
-
 .gear-main {
   width: 100vw;
   margin: 0px;
@@ -353,11 +360,6 @@ footer p, a {
 .gear-main img {
   height: 35vh;
   width: 100%;
-}
-
-
-.gear-bicycle {
-
 }
 
 .gear-camp {
@@ -379,15 +381,7 @@ footer p, a {
   margin: 5px;
 }
 
-
-
-
-
-
-
 /* -------------------- */
-
-
 /* ##### Device config ###### */
 /* Mobile */
 @media (max-width: 768px) {
@@ -434,6 +428,27 @@ footer p, a {
 
     }
 
+    footer {
+      display: flex;
+      height: 20vh;
+      background-color: purple;
+    }
+
+    .footer-desktop-div {
+      display: none;
+    }
+  
+    .footer-mobile {
+      flex-direction: column;
+    }
+
+    .logo-img {
+      height: 10vh;
+      width: auto;
+    }
+
+
+
     /* the timeline */
      /* Place the timelime to the left */
      .timeline::after {
@@ -466,7 +481,13 @@ footer p, a {
       }
 
       .header-logo-anchors {
-        visibility: hidden;
+        display: none;
+      }
+
+      .main {
+          display: flex;
+          flex-direction: column;
+          margin: 10px;
       }
   
   
@@ -475,16 +496,44 @@ footer p, a {
 
 /* Desktop */
 @media (min-width: 768px) {
-    nav {
-        visibility: hidden;
-    }
+
+  /* General */
+
+  h1 {
+    font-size: 46px;
+
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  nav {
+      visibility: hidden;
+  }
+
+  .footer-desktop-div {
+    display: flex;
+  }
+
+  .footer-mobile {
+    display: none;
+  }
+
+
+
+    /* ---- */
 
     .menu-btn-toggle {
       visibility: hidden;
     }
 
     .header-logo-anchors {
-      visibility: visible;
+      display: block;
     }
 
     .start-slideshow-images {
@@ -496,6 +545,11 @@ footer p, a {
     .start-slideshow-img {
       height: 80vh;
       width: 80vw;
+
+    }
+
+    .start-info {
+      display: flex;
 
     }
 
