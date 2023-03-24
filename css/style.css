@@ -72,7 +72,7 @@ a {
   color: black;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
@@ -210,13 +210,11 @@ footer p, a {
   
 /* -------------------- */
 /* about.html */
+
 .about-image {
-    background-image: url(/img/hono_resan.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: top;
-    justify-content: center;
+  height: auto;
+  width: 100%;
+
 }
 
 * {
@@ -392,7 +390,6 @@ footer p, a {
   height: 300px;
   width: 100%;
   display: flex;
-  align-items: top;
   justify-content: center;
 }
 
@@ -415,9 +412,16 @@ footer p, a {
 
 }
 
-.gear-main img {
-  height: 35vh;
+.gear-img-container {
+  display: flex;
   width: 100%;
+  justify-content: center;
+
+}
+
+.gear-img {
+  height: 100vh;
+  width: 80%;
 }
 
 .gear-camp {
@@ -480,7 +484,6 @@ footer p, a {
         align-items: center;
         justify-content: center;
         text-align: center;
-        text-justify: center;
 
     }
 
@@ -546,12 +549,6 @@ footer p, a {
           margin: 10px;
       }
 
-
-      .about-image {
-        height: 300px;
-        width: 100%;
-    
-      }
   
   
 
@@ -611,7 +608,7 @@ footer p, a {
 
     .start-slideshow-img {
       height: 80vh;
-      width: 80vw;
+      width: auto;
 
     }
 
@@ -626,13 +623,6 @@ footer p, a {
       width: 25%;
       height: auto;
       
-    }
-
-
-    .about-image {
-      height: 80vh;
-      width: 100%;
-  
     }
 
     .about-article-container {
@@ -652,22 +642,50 @@ footer p, a {
 
     .member-article-container {
       display: flex;
-      margin: 20px;
+      margin: 100px;
+      justify-content: space-evenly;
+
     }
 
     .member-article {
       margin: 40px;
+      width: 30%;
+    }
 
+    .member-article a {
+      color: blue;
+      font-size: 32px;
     }
 
     .gear-bicycle {
         margin: 20px;
+        align-items: center;
+        width: 20vw;
+    }
+
+    .gear-camp {
+      margin: 20px;
+      align-items: center;
+      width: 20vw;
+
     }
 
     .gear-main {
         display: flex;
-      
+        justify-content: space-evenly;
+    
       }
+
+    .news-article-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+    }
+  
+    .news-article {
+      width: 25vw;
+    }
 
 
 }
