@@ -224,7 +224,7 @@ footer p, a {
 
 .front-image {
   height: 80vh;
-  width: 82%;
+  width: auto;
 
 }
 
@@ -394,9 +394,10 @@ footer p, a {
 
   /* -------------------- */
 /* Member.html */
-.member-article a {
+.member-anchor {
   display: flex;
   justify-content: center;
+  color: blue;
 }
 
 
@@ -650,18 +651,22 @@ footer p, a {
 
     .about-article-container {
       display: flex;
+      margin: 50px;
 
     }
 
     .about-article {
       margin: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
 
 
     .member-article-container {
       display: flex;
-      margin: 60px;
+      margin: 20px;
       justify-content: space-evenly;
 
     }
@@ -671,7 +676,7 @@ footer p, a {
       width: 30%;
     }
 
-    .member-article a {
+    .member-anchor {
       color: blue;
       font-size: 32px;
     }
