@@ -43,7 +43,7 @@ header {
 .header-link {
   color: black;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 28px;
   position: relative;
 }
 
@@ -211,7 +211,7 @@ footer p, a {
   }
 
   #sponsor-img {
-    height: 12vh;
+    height: 16vh;
   }
   
 /* -------------------- */
@@ -652,14 +652,15 @@ footer p, a {
     .about-article-container {
       display: flex;
       margin: 50px;
-
+      justify-content: center;
     }
 
     .about-article {
       margin: 40px;
+      width: 50%;
       display: flex;
       flex-direction: column;
-      align-items: center;
+
     }
 
 
