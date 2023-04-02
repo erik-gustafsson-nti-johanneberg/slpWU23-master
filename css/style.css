@@ -366,6 +366,8 @@ footer p, a {
 
 /* -------------------- */
 /* news.html */
+
+
 .news-article {
   display: flex;
   flex-direction: column;
@@ -379,7 +381,7 @@ footer p, a {
 }
 
  .news-article img {
-  height: 20vh;
+  height: 25vh;
   width: auto;
   max-width: 95%;
   margin-top: 10px;
@@ -719,9 +721,7 @@ footer p, a {
       }
 
     .news-article-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      display: flex;
 
     }
   
