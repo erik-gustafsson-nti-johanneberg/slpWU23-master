@@ -109,7 +109,7 @@ footer p, a {
 
  
 .logo-img {
-  height: 20vh;
+  height: 15vh;
   width: auto;
  }
 
@@ -210,8 +210,11 @@ footer p, a {
     opacity: 1;
   }
 
-  #sponsor-img {
+  .sponsor-img {
     height: 16vh;
+    width: auto;
+
+    margin: 40px;
   }
   
 /* -------------------- */
@@ -376,19 +379,15 @@ footer p, a {
 }
 
  .news-article img {
-  height: 30vh;
-  width: 22vw;
+  height: 20vh;
+  width: auto;
+  max-width: 95%;
   margin-top: 10px;
-
  }
 
  .news-sponsors {
   display: flex;
   justify-content: center;
- }
-
- .news-sponsors .icon-img {
-  margin: 40px;
  }
 
 
@@ -422,16 +421,8 @@ footer p, a {
 }
 
 .gear-img {
-  height: 100vh;
-  width: 80%;
-}
-
-.gear-camp {
-
-}
-
-.gear-packlist {
-
+  height: 85vh;
+  width: 90%;
 }
 
 .gear-packlist h2 {
@@ -491,7 +482,8 @@ footer p, a {
 
     footer {
       display: flex;
-      height: 20vh;
+      height: 100%;
+      width: 100%;
       background-color: purple;
     }
 
@@ -506,11 +498,18 @@ footer p, a {
   
     .footer-mobile {
       flex-direction: column;
+      margin: 10px;
     }
 
     .logo-img {
       height: 10vh;
       width: auto;
+    }
+
+      
+    .sponsor-img {
+      height: 12vh;
+      margin: 10px;
     }
 
 
@@ -568,9 +567,19 @@ footer p, a {
       }
 
       .news-article img {
-        height: 30vh;
-        width: auto;      
+        height: 100%;
+        width: 100%;
        }
+
+
+       #member-article-desktop {
+        display: none;
+      }
+  
+      #member-article-mobile {
+        display: block;
+      }
+  
 
 
   
@@ -644,7 +653,7 @@ footer p, a {
 
     }
     .start-info-article {
-      width: 25%;
+      width: 30%;
       height: auto;
       
     }
@@ -680,6 +689,14 @@ footer p, a {
     .member-anchor {
       color: blue;
       font-size: 32px;
+    }
+
+    #member-article-desktop {
+      display: block;
+    }
+
+    #member-article-mobile {
+      display: none;
     }
 
     .gear-bicycle {
