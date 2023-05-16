@@ -29,6 +29,11 @@ header {
     height: var(--header-height);
 }
 
+
+p {
+  font-family: 'Lucida Sans';
+}
+
 .header-logo-info {
   display: flex;
   align-items: center;
@@ -595,7 +600,7 @@ footer p, a {
   /* General */
 
   h1 {
-    font-size: 38px;
+    font-size: 36px;
 
   }
 
@@ -604,7 +609,7 @@ footer p, a {
   }
 
   p {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   nav {
