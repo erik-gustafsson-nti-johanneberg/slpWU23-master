@@ -14,6 +14,10 @@
 /* General */
 body {
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   background-color: whitesmoke;
   font-family: ZillaSlab;
@@ -30,8 +34,8 @@ header {
 }
 
 
-p {
-  font-family: 'Lucida Sans';
+p, li {
+  font-family: 'Lucida Sans Unicode', sans-serif
 }
 
 .header-logo-info {
@@ -85,8 +89,10 @@ h1, h2 {
 
 footer {
   display: flex;
+  margin-top: auto;
   flex-direction: row;
   justify-content: space-evenly;
+  bottom: 0;
   background-color: purple;
 }
 
@@ -406,6 +412,10 @@ footer p, a {
   color: blue;
 }
 
+.member-main {
+  flex: 1; 
+}
+
 
   /* -------------------- */
 /* gear.html */
@@ -519,7 +529,11 @@ footer p, a {
       margin: 10px;
     }
 
+    .start-slideshow-img {
+      height: 35vh;
+      width: auto;
 
+    }
 
     /* the timeline */
      /* Place the timelime to the left */
@@ -685,7 +699,6 @@ footer p, a {
       display: flex;
       margin: 20px;
       justify-content: space-evenly;
-
     }
 
     .member-article {
